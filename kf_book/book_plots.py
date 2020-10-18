@@ -64,23 +64,29 @@ IS_INLINE = mpl.get_backend().find('backend_inline') != -1
 def plot_errorbars(bars, xlims, ylims=(-1, 1)):
     """Plots a list of error bars with optional x and y limits.
     The list `bars` is a list of tuples (or any iterable) containing
-
     (mean value, error plus/minus, label)
+    绘制带有可选x和y限制的误差线列表。 bars列表是一个元组（或任何可迭代的）
+    列表，其中包含 （平均值，误差加/减，标签）
 
     For example (160, 3, 'A') draws an error bar from 157 to 163, with the
     legend label 'A`)
+    例如（160，3，'A'）绘制一个误差线从157到163，其中 图例标签“A”）
 
     Parameters
     ----------
 
     bars : list
         list of tuples in form (mean, error +/-, label)
+        形式的元组列表（平均值，错误+/-，标签）
+
 
     x-lims : tuple
         tuple containing min and max values for x axis
+        包含x轴的最小值和最大值的元组
 
     y-lims : tuple, optional
         tuple containing min and max values for y axis ( the default is (-1, 1))
+        包含y轴的最小值和最大值的元组（默认为（-1，1））
 
     Example
     -------
